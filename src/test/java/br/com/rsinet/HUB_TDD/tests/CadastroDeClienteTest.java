@@ -13,6 +13,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import br.com.rsinet.HUB_TDD.utility.Print;
+
 public class CadastroDeClienteTest {
 	private WebDriver navegador = new ChromeDriver();
 	
@@ -51,7 +53,9 @@ public class CadastroDeClienteTest {
 	navegador.findElement(By.name("state_/_province_/_regionRegisterPage")).sendKeys("São Paulo");
 	navegador.findElement(By.name("postal_codeRegisterPage")).sendKeys("01311-922");
 	navegador.findElement(By.name("i_agree")).click();
-	navegador.findElement(By.id("register_btnundefined")).click();
+	
+//	navegador.findElement(By.id("register_btnundefined")).click();
+	
 	WebElement usuarioLogado = navegador.findElement(By.className("hi-user containMiniTitle ng-binding"));
 	String textoUsuarioLogado = usuarioLogado.getText();
 	

@@ -11,5 +11,12 @@ public class HomePage {
 		element = navegador.findElement(By.id("menuUser"));
 		return element;
 	}
+	
+	public static String usuarioLogado(WebDriver navegador) throws InterruptedException {
+		Thread.sleep(3000);
+		WebElement usuarioLogado = navegador.findElement(By.xpath("//*[@id=\"menuUserLink\"]/span"));
+		String textoUsuarioLogado = usuarioLogado.getText();
+		return textoUsuarioLogado;
+	}
 
 }
