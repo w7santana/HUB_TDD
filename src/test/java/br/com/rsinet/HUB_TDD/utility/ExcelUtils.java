@@ -24,12 +24,10 @@ public static void setExcelFile(String Path,String SheetName) throws Exception {
 
 		try {
 
-			// Open the Excel file
-
+		// Open the Excel file
 		FileInputStream ExcelFile = new FileInputStream(Path);
 
 		// Access the required test data sheet
-
 		ExcelWBook = new XSSFWorkbook(ExcelFile);
 
 		ExcelWSheet = ExcelWBook.getSheet(SheetName);

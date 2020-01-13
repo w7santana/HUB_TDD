@@ -3,7 +3,9 @@ package br.com.rsinet.HUB_TDD.PageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FormDeCadastroPage {
 private static WebElement element = null;
@@ -77,6 +79,13 @@ private static Select select = null;
 	
 	public static WebElement btnRegister(WebDriver navegador) {
 		element = navegador.findElement(By.id("register_btnundefined"));
+		return element;
+	}
+	
+	public static WebElement lblUsuarioJaExiste(WebDriver navegador) {
+		WebDriverWait aguardar = new WebDriverWait(navegador, 10);
+		aguardar.until(ExpectedConditions.visibilityOf((WebElement) By.className("center block smollMargin")));
+		element = navegador.findElement(By.className("center block smollMargin"));
 		return element;
 	}
 	

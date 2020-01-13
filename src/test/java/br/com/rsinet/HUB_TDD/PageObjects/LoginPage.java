@@ -11,8 +11,6 @@ public class LoginPage {
 private static WebElement element = null;
 	
 	public static WebElement lnkNewAccount(WebDriver navegador) throws InterruptedException {
-		WebDriverWait aguardar = new WebDriverWait(navegador, 10);
-		aguardar.until(ExpectedConditions.elementToBeClickable(By.linkText("CREATE NEW ACCOUNT")));
 		element = navegador.findElement(By.linkText("CREATE NEW ACCOUNT"));
 		return element;
 	}
