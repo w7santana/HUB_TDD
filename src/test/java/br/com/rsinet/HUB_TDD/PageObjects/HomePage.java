@@ -1,11 +1,9 @@
 package br.com.rsinet.HUB_TDD.PageObjects;
 
-import java.sql.Driver;
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -52,10 +50,21 @@ public class HomePage {
 		return element;
 	}
 
-	public static WebElement produtoPesquisado(WebDriver navegador) {
-		element = navegador.findElement(By.partialLinkText("LOGITECH X100"));
-		return element;
+	public static WebElement buscarProduto(WebDriver navegador, String produto) {
+		WebDriverWait wait = new WebDriverWait(navegador, 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[. ='" + produto + "']")));
+		element = navegador.findElement(By.xpath("//*[. ='" + produto + "']"));
+		System.out.println("Produto pesquisado: " + element.getText());
+		JavascriptExecutor ex = (JavascriptExecutor) navegador;
+		ex.executeScript("arguments[0].click();", element);
 
+		return element;
+	}
+
+	public static WebElement descProduto(WebDriver navegador) {
+		WebDriverWait wait = new WebDriverWait(navegador, 10);
+		element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"Description\"]/h1")));
+		return element;
 	}
 
 }

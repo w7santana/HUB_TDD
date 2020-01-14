@@ -7,7 +7,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import br.com.rsinet.HUB_TDD.PageObjects.FormDeCadastroPage;
@@ -21,16 +20,16 @@ public class CadastroClienteTest {
 	private static WebDriver navegador = null;
 	
 	@Before
-	public void setup() {
+	public void setup() throws Exception {
 		navegador = new ChromeDriver();
-		navegador.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		navegador.manage().window().maximize();
 		navegador.get("http://advantageonlineshopping.com/#/");
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "Planilha1");
 	}
 	
-//	@Test
+	@Test
 	public void deveCadastrarUsuario() throws Exception {
-		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "Planilha1");
 		
 		HomePage.btnUser(navegador).click();
 		LoginPage.lnkNewAccount(navegador).sendKeys(Keys.ENTER);
@@ -55,10 +54,8 @@ public class CadastroClienteTest {
 		Assert.assertEquals(ExcelUtils.getCellData(1, 0), HomePage.usuarioLogado(navegador));
 	}
 	
-//	@Test
+	@Test
 	public void deveRecusarUserNameDuplicado() throws Exception {
-		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "Planilha1");
-		
 		HomePage.btnUser(navegador).click();
 		LoginPage.lnkNewAccount(navegador).sendKeys(Keys.ENTER);
 		
@@ -85,8 +82,9 @@ public class CadastroClienteTest {
 	}
 	
 	
-//	@Test
+	@Test
 	public void deveEncontrarProduto() {
+		
 		HomePage.selecionaCategoriaProduto(navegador, "MICE").click();
 		HomePage.selecionaMouse(navegador).click();
 		
@@ -95,13 +93,6 @@ public class CadastroClienteTest {
 	}
 	
 	
-	@Test
-	public void devePesquisarProduto() {
-		HomePage.btnLupa(navegador).click();
-		HomePage.campoBusca(navegador).sendKeys("LOGITECH X100");
-		HomePage.produtoPesquisado(navegador).click();
-		
-		Print.captureScreenShot(navegador);
-	}
+	
 
 }

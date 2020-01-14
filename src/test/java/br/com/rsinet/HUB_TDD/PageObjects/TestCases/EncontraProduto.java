@@ -28,5 +28,9 @@ public class EncontraProduto {
 		Assert.assertEquals("LOGITECH G502 PROTEUS CORE", HomePage.lblProduto(navegador));
 	}
 	
+	@Test
+	public void naoDeveEncontrarProduto() {
+	}
+	
 	
 }
