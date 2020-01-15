@@ -1,4 +1,4 @@
-package br.com.rsinet.HUB_TDD.PageObjects.TestCases;
+package br.com.rsinet.HUB_TDD.TestCases;
 
 import java.util.concurrent.TimeUnit;
 
@@ -29,8 +29,6 @@ private WebDriver navegador = new ChromeDriver();
 	
 	@Test
 	public void devePesquisarProduto() throws Exception {
-//		String produtoEsperado = ExcelUtils.getCellData(6, 0);
-		
 		HomePage.btnLupa(navegador).click();
 		HomePage.campoBusca(navegador).sendKeys(ExcelUtils.getCellData(6, 0), Keys.ENTER);
 		HomePage.buscarProduto(navegador, ExcelUtils.getCellData(6, 0));
@@ -45,7 +43,8 @@ private WebDriver navegador = new ChromeDriver();
 		HomePage.campoBusca(navegador).sendKeys(ExcelUtils.getCellData(6, 1), Keys.ENTER);
 		System.out.println(navegador.findElement(By.xpath("//*[@id=\"searchPage\"]/div[3]/div/label")).getText());
 		
-		//Falta o ASSERT
+		Assert.assertTrue(navegador.findElement(By.xpath("//*[@id=\"searchPage\"]/div[3]/div/label")).isDisplayed());
+		Print.captureScreenShot(navegador);
 	}
 	
 	

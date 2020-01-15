@@ -1,14 +1,16 @@
-package br.com.rsinet.HUB_TDD.PageObjects.TestCases;
+package br.com.rsinet.HUB_TDD.TestCases;
 
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import br.com.rsinet.HUB_TDD.PageObjects.HomePage;
+import br.com.rsinet.HUB_TDD.utility.Print;
 
 public class EncontraProduto {
 	private WebDriver navegador = new ChromeDriver();
@@ -26,10 +28,20 @@ public class EncontraProduto {
 		HomePage.selecionaMouse(navegador).click();
 		
 		Assert.assertEquals("LOGITECH G502 PROTEUS CORE", HomePage.lblProduto(navegador));
+		Print.captureScreenShot(navegador);
+
 	}
 	
 	@Test
 	public void naoDeveEncontrarProduto() {
+		HomePage.selecionaCategoriaProduto(navegador, "MICE").click();
+		HomePage.filtraScroller(navegador).click();
+		HomePage.chkTouchScroll(navegador).click();
+		HomePage.filtraCor(navegador).click();
+		HomePage.chkCorAzul(navegador).click();
+		
+		Assert.assertTrue(navegador.findElement(By.xpath("/html/body/div[3]/section/article/div[3]/div/div/div[3]/label/span")).isDisplayed());
+		Print.captureScreenShot(navegador);
 	}
 	
 	

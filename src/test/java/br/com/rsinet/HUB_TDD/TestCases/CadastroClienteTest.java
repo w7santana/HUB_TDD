@@ -1,4 +1,4 @@
-package br.com.rsinet.HUB_TDD.PageObjects.TestCases;
+package br.com.rsinet.HUB_TDD.TestCases;
 
 import java.util.concurrent.TimeUnit;
 
@@ -49,9 +49,8 @@ public class CadastroClienteTest {
 		FormDeCadastroPage.chkIAgree(navegador).click();
 		FormDeCadastroPage.btnRegister(navegador).click();
 		
-		System.out.println(HomePage.usuarioLogado(navegador));
-				
 		Assert.assertEquals(ExcelUtils.getCellData(1, 0), HomePage.usuarioLogado(navegador));
+		Print.captureScreenShot(navegador);
 	}
 	
 	@Test
@@ -74,23 +73,12 @@ public class CadastroClienteTest {
 		FormDeCadastroPage.chkIAgree(navegador).click();
 		FormDeCadastroPage.btnRegister(navegador).click();
 		
-		String usuarioDuplicado = FormDeCadastroPage.lblUsuarioJaExiste(navegador).getText();
-		System.out.println(usuarioDuplicado);
-		
-		Assert.assertEquals("User name already exists", usuarioDuplicado);
+		Assert.assertTrue(FormDeCadastroPage.lblUsuarioJaExiste(navegador).isDisplayed());
 		Print.captureScreenShot(navegador);
 	}
 	
 	
-	@Test
-	public void deveEncontrarProduto() {
-		
-		HomePage.selecionaCategoriaProduto(navegador, "MICE").click();
-		HomePage.selecionaMouse(navegador).click();
-		
-		Assert.assertEquals("LOGITECH G502 PROTEUS CORE", HomePage.lblProduto(navegador));
-		Print.captureScreenShot(navegador);
-	}
+	
 	
 	
 	
