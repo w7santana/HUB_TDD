@@ -1,10 +1,10 @@
 package br.com.rsinet.HUB_TDD.TestCases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -15,11 +15,11 @@ import br.com.rsinet.HUB_TDD.utility.Constant;
 import br.com.rsinet.HUB_TDD.utility.ExcelUtils;
 import br.com.rsinet.HUB_TDD.utility.Print;
 
-public class PesquisaProduto {
+public class PesquisaProdutoTestNG {
 	
 private WebDriver navegador = new ChromeDriver();
 	
-	@Before
+	@BeforeMethod
 	public void Setup() throws Exception{
 		navegador.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		navegador.manage().window().maximize();
@@ -33,7 +33,7 @@ private WebDriver navegador = new ChromeDriver();
 		HomePage.campoBusca(navegador).sendKeys(ExcelUtils.getCellData(6, 0), Keys.ENTER);
 		HomePage.buscarProduto(navegador, ExcelUtils.getCellData(6, 0));
 		
-		Assert.assertEquals(ExcelUtils.getCellData(6, 0), HomePage.descProduto(navegador).getText());
+		AssertJUnit.assertEquals(ExcelUtils.getCellData(6, 0), HomePage.descProduto(navegador).getText());
 		Print.captureScreenShot(navegador);
 	}
 	
@@ -43,7 +43,7 @@ private WebDriver navegador = new ChromeDriver();
 		HomePage.campoBusca(navegador).sendKeys(ExcelUtils.getCellData(6, 1), Keys.ENTER);
 		System.out.println(navegador.findElement(By.xpath("//*[@id=\"searchPage\"]/div[3]/div/label")).getText());
 		
-		Assert.assertTrue(navegador.findElement(By.xpath("//*[@id=\"searchPage\"]/div[3]/div/label")).isDisplayed());
+		AssertJUnit.assertTrue(navegador.findElement(By.xpath("//*[@id=\"searchPage\"]/div[3]/div/label")).isDisplayed());
 		Print.captureScreenShot(navegador);
 	}
 	

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Testes advantageonlineshopping" duration-ms="60002" started-at="2020-01-16T12:59:44Z" finished-at="2020-01-16T13:00:44Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="60002" started-at="2020-01-16T12:59:44Z" finished-at="2020-01-16T13:00:44Z">
+      <class name="br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@5a37d3ed]" name="Setup" is-config="true" duration-ms="4967" started-at="2020-01-16T10:00:33Z" finished-at="2020-01-16T10:00:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="deveInformarProdutoInexistente()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@5a37d3ed]" name="deveInformarProdutoInexistente" duration-ms="3312" started-at="2020-01-16T10:00:38Z" finished-at="2020-01-16T10:00:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveInformarProdutoInexistente -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@5a37d3ed]" name="Setup" is-config="true" duration-ms="91" started-at="2020-01-16T10:00:42Z" finished-at="2020-01-16T10:00:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="devePesquisarProduto()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@5a37d3ed]" name="devePesquisarProduto" duration-ms="2119" started-at="2020-01-16T10:00:42Z" finished-at="2020-01-16T10:00:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- devePesquisarProduto -->
+      </class> <!-- br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG -->
+      <class name="br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@797b0699]" name="Setup" is-config="true" duration-ms="4941" started-at="2020-01-16T10:00:21Z" finished-at="2020-01-16T10:00:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="deveEncontrarProduto()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@797b0699]" name="deveEncontrarProduto" duration-ms="5607" started-at="2020-01-16T10:00:26Z" finished-at="2020-01-16T10:00:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveEncontrarProduto -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@797b0699]" name="Setup" is-config="true" duration-ms="155" started-at="2020-01-16T10:00:32Z" finished-at="2020-01-16T10:00:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="naoDeveEncontrarProduto()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@797b0699]" name="naoDeveEncontrarProduto" duration-ms="1538" started-at="2020-01-16T10:00:32Z" finished-at="2020-01-16T10:00:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- naoDeveEncontrarProduto -->
+      </class> <!-- br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG -->
+      <class name="br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG">
+        <test-method status="PASS" signature="setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG@53b7f657]" name="setup" is-config="true" duration-ms="11281" started-at="2020-01-16T09:59:44Z" finished-at="2020-01-16T09:59:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="deveCadastrarUsuario()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG@53b7f657]" name="deveCadastrarUsuario" duration-ms="8309" started-at="2020-01-16T09:59:55Z" finished-at="2020-01-16T10:00:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveCadastrarUsuario -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG@53b7f657]" name="setup" is-config="true" duration-ms="10196" started-at="2020-01-16T10:00:03Z" finished-at="2020-01-16T10:00:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="deveRecusarUserNameDuplicado()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG@53b7f657]" name="deveRecusarUserNameDuplicado" duration-ms="7436" started-at="2020-01-16T10:00:14Z" finished-at="2020-01-16T10:00:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deveRecusarUserNameDuplicado -->
+      </class> <!-- br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG -->
+    </test> <!-- Test -->
+  </suite> <!-- Testes advantageonlineshopping -->
+</testng-results>

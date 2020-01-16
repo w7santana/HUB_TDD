@@ -1,10 +1,10 @@
 package br.com.rsinet.HUB_TDD.TestCases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,10 +16,10 @@ import br.com.rsinet.HUB_TDD.utility.Constant;
 import br.com.rsinet.HUB_TDD.utility.ExcelUtils;
 import br.com.rsinet.HUB_TDD.utility.Print;
 
-public class CadastroClienteTest {
+public class CadastroClienteTestNG {
 	private static WebDriver navegador = null;
 	
-	@Before
+	@BeforeMethod
 	public void setup() throws Exception {
 		navegador = new ChromeDriver();
 		navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -49,7 +49,7 @@ public class CadastroClienteTest {
 		FormDeCadastroPage.chkIAgree(navegador).click();
 		FormDeCadastroPage.btnRegister(navegador).click();
 		
-		Assert.assertEquals(ExcelUtils.getCellData(1, 0), HomePage.usuarioLogado(navegador));
+		AssertJUnit.assertEquals(ExcelUtils.getCellData(1, 0), HomePage.usuarioLogado(navegador));
 		Print.captureScreenShot(navegador);
 	}
 	
@@ -73,7 +73,7 @@ public class CadastroClienteTest {
 		FormDeCadastroPage.chkIAgree(navegador).click();
 		FormDeCadastroPage.btnRegister(navegador).click();
 		
-		Assert.assertTrue(FormDeCadastroPage.lblUsuarioJaExiste(navegador).isDisplayed());
+		AssertJUnit.assertTrue(FormDeCadastroPage.lblUsuarioJaExiste(navegador).isDisplayed());
 		Print.captureScreenShot(navegador);
 	}
 	

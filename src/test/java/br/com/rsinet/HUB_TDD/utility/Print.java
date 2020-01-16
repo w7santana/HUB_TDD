@@ -13,7 +13,7 @@ public class Print {
 
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(src, new File("C:\\Users\\willian.costa\\Desktop\\evidencias\\" 
+			FileUtils.copyFile(src, new File(".\\Evidencias\\"
 					+ System.currentTimeMillis() + ".png"));
 		}
 		catch (IOException e)
