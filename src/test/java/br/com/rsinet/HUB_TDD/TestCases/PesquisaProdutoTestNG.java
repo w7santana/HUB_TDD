@@ -1,30 +1,32 @@
 package br.com.rsinet.HUB_TDD.TestCases;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import br.com.rsinet.HUB_TDD.PageObjects.HomePage;
 import br.com.rsinet.HUB_TDD.utility.Constant;
+import br.com.rsinet.HUB_TDD.utility.Driver;
 import br.com.rsinet.HUB_TDD.utility.ExcelUtils;
 import br.com.rsinet.HUB_TDD.utility.Print;
 
 public class PesquisaProdutoTestNG {
 	
-private WebDriver navegador = new ChromeDriver();
+private WebDriver navegador = null;
 	
 	@BeforeMethod
 	public void Setup() throws Exception{
-		navegador.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		navegador.manage().window().maximize();
-		navegador.get("http://advantageonlineshopping.com/#/");
+		navegador = Driver.getDriver();
 		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "Planilha1");
+	}
+	
+	@AfterMethod
+	public void tearDown() {
+		Driver.killDriver();
 	}
 	
 	@Test

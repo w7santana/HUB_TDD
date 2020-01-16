@@ -7,17 +7,19 @@
         <methods>
           <include name="deveCadastrarUsuario"/>
           <include name="setup"/>
-          <include name="deveRecusarUserNameDuplicado"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG -->
       <class name="br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG">
         <methods>
+          <include name="TearDown"/>
           <include name="Setup"/>
         </methods>
       </class> <!-- br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG -->
       <class name="br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG">
         <methods>
           <include name="Setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG -->
     </classes>
