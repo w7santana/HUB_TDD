@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Testes advantageonlineshopping]">
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG">
-        <methods>
-          <include name="deveCadastrarUsuario"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG -->
       <class name="br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG">
         <methods>
-          <include name="TearDown"/>
+          <include name="naoDeveEncontrarProduto"/>
+          <include name="deveEncontrarProduto"/>
           <include name="Setup"/>
         </methods>
       </class> <!-- br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG -->
-      <class name="br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG">
-        <methods>
-          <include name="Setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Testes advantageonlineshopping] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

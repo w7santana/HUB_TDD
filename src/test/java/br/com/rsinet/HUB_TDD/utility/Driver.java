@@ -16,6 +16,7 @@ public class Driver {
 	}
 	
 	private static WebDriver createDriver() {
+		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
 		navegador = new ChromeDriver();
 		navegador.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		navegador.manage().window().maximize();

@@ -7,7 +7,6 @@
         <methods>
           <include name="naoDeveEncontrarProduto"/>
           <include name="deveEncontrarProduto"/>
-          <include name="TearDown"/>
           <include name="Setup"/>
         </methods>
       </class> <!-- br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG -->

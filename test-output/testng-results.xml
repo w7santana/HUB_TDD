@@ -1,133 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Testes advantageonlineshopping" duration-ms="109978" started-at="2020-01-16T20:24:40Z" finished-at="2020-01-16T20:26:30Z">
+  <suite name="Default suite" duration-ms="35385" started-at="2020-01-17T18:11:43Z" finished-at="2020-01-17T18:12:18Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="109978" started-at="2020-01-16T20:24:40Z" finished-at="2020-01-16T20:26:30Z">
-      <class name="br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@3c87521]" name="Setup" is-config="true" duration-ms="10122" started-at="2020-01-16T17:25:59Z" finished-at="2020-01-16T17:26:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="deveInformarProdutoInexistente()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@3c87521]" name="deveInformarProdutoInexistente" duration-ms="3197" started-at="2020-01-16T17:26:10Z" finished-at="2020-01-16T17:26:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deveInformarProdutoInexistente -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@3c87521]" name="tearDown" is-config="true" duration-ms="705" started-at="2020-01-16T17:26:13Z" finished-at="2020-01-16T17:26:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@3c87521]" name="Setup" is-config="true" duration-ms="10127" started-at="2020-01-16T17:26:13Z" finished-at="2020-01-16T17:26:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="devePesquisarProduto()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@3c87521]" name="devePesquisarProduto" duration-ms="5026" started-at="2020-01-16T17:26:24Z" finished-at="2020-01-16T17:26:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- devePesquisarProduto -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@3c87521]" name="tearDown" is-config="true" duration-ms="1139" started-at="2020-01-16T17:26:29Z" finished-at="2020-01-16T17:26:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG -->
+    <test name="Default test" duration-ms="35385" started-at="2020-01-17T18:11:43Z" finished-at="2020-01-17T18:12:18Z">
       <class name="br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@14a2f921]" name="Setup" is-config="true" duration-ms="10064" started-at="2020-01-16T17:25:26Z" finished-at="2020-01-16T17:25:36Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@55f3ddb1]" name="Setup" is-config="true" duration-ms="12152" started-at="2020-01-17T15:11:43Z" finished-at="2020-01-17T15:11:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="deveEncontrarProduto()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@14a2f921]" name="deveEncontrarProduto" duration-ms="5552" started-at="2020-01-16T17:25:36Z" finished-at="2020-01-16T17:25:42Z">
+        <test-method status="PASS" signature="deveEncontrarProduto()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@55f3ddb1]" name="deveEncontrarProduto" duration-ms="5585" started-at="2020-01-17T15:11:55Z" finished-at="2020-01-17T15:12:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deveEncontrarProduto -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@14a2f921]" name="TearDown" is-config="true" duration-ms="1128" started-at="2020-01-16T17:25:42Z" finished-at="2020-01-16T17:25:43Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@55f3ddb1]" name="TearDown" is-config="true" duration-ms="728" started-at="2020-01-17T15:12:01Z" finished-at="2020-01-17T15:12:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@14a2f921]" name="Setup" is-config="true" duration-ms="10092" started-at="2020-01-16T17:25:43Z" finished-at="2020-01-16T17:25:53Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@55f3ddb1]" name="Setup" is-config="true" duration-ms="10168" started-at="2020-01-17T15:12:02Z" finished-at="2020-01-17T15:12:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="naoDeveEncontrarProduto()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@14a2f921]" name="naoDeveEncontrarProduto" duration-ms="5866" started-at="2020-01-16T17:25:53Z" finished-at="2020-01-16T17:25:59Z">
+        <test-method status="PASS" signature="naoDeveEncontrarProduto()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@55f3ddb1]" name="naoDeveEncontrarProduto" duration-ms="5979" started-at="2020-01-17T15:12:12Z" finished-at="2020-01-17T15:12:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- naoDeveEncontrarProduto -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@14a2f921]" name="TearDown" is-config="true" duration-ms="719" started-at="2020-01-16T17:25:59Z" finished-at="2020-01-16T17:25:59Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@55f3ddb1]" name="TearDown" is-config="true" duration-ms="740" started-at="2020-01-17T15:12:18Z" finished-at="2020-01-17T15:12:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG -->
-      <class name="br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG">
-        <test-method status="PASS" signature="setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG@212bf671]" name="setup" is-config="true" duration-ms="11588" started-at="2020-01-16T17:24:40Z" finished-at="2020-01-16T17:24:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="deveCadastrarUsuario()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG@212bf671]" name="deveCadastrarUsuario" duration-ms="16011" started-at="2020-01-16T17:24:51Z" finished-at="2020-01-16T17:25:07Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id="menuUserLink"]/span (tried for 10 second(s) with 1000 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RSI1562', ip: '10.1.0.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id="menuUserLink"]/span (tried for 10 second(s) with 1000 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RSI1562', ip: '10.1.0.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at br.com.rsinet.HUB_TDD.PageObjects.HomePage.usuarioLogado(HomePage.java:31)
-	at br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG.deveCadastrarUsuario(CadastroClienteTestNG.java:53)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deveCadastrarUsuario -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG@212bf671]" name="tearDown" is-config="true" duration-ms="721" started-at="2020-01-16T17:25:07Z" finished-at="2020-01-16T17:25:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG@212bf671]" name="setup" is-config="true" duration-ms="10135" started-at="2020-01-16T17:25:08Z" finished-at="2020-01-16T17:25:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="deveRecusarUserNameDuplicado()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG@212bf671]" name="deveRecusarUserNameDuplicado" duration-ms="7049" started-at="2020-01-16T17:25:18Z" finished-at="2020-01-16T17:25:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deveRecusarUserNameDuplicado -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG@212bf671]" name="tearDown" is-config="true" duration-ms="690" started-at="2020-01-16T17:25:25Z" finished-at="2020-01-16T17:25:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG -->
-    </test> <!-- Test -->
-  </suite> <!-- Testes advantageonlineshopping -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
