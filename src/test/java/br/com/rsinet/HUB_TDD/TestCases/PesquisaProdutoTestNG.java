@@ -32,7 +32,7 @@ private WebDriver navegador = null;
 	@Test
 	public void devePesquisarProduto() throws Exception {
 		HomePage.btnLupa(navegador).click();
-		HomePage.campoBusca(navegador).sendKeys(ExcelUtils.getCellData(6, 0), Keys.ENTER);
+		HomePage.campoBusca(navegador).sendKeys(ExcelUtils.getCellData(6, 0) + Keys.ENTER);
 		HomePage.buscarProduto(navegador, ExcelUtils.getCellData(6, 0));
 		
 		AssertJUnit.assertEquals(ExcelUtils.getCellData(6, 0), HomePage.descProduto(navegador).getText());

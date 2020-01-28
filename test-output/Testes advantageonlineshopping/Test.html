@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 16 17:24:40 BRT 2020</td>
+<td>Started on:</td><td>Tue Jan 28 13:38:45 BRT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>109 seconds (109978 ms)</td>
+<tr><td>Total time:</td><td>104 seconds (104129 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,24 +75,48 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG.deveCadastrarUsuario()'><b>deveCadastrarUsuario</b><br>Test class: br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&quot;menuUserLink&quot;]/span (tried for 10 second(s) with 1000 milliseconds interval)
+<td title='br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG.devePesquisarProduto()'><b>devePesquisarProduto</b><br>Test class: br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;RSI1562&apos;, ip: &apos;10.1.0.98&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at br.com.rsinet.HUB_TDD.PageObjects.HomePage.usuarioLogado(HomePage.java:31)
-	at br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG.deveCadastrarUsuario(CadastroClienteTestNG.java:53)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2114537280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2114537280'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&quot;menuUserLink&quot;]/span (tried for 10 second(s) with 1000 milliseconds interval)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\WILLIA~1.COS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54269}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ed8b07ce88c398e5953af444f18d748b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at br.com.rsinet.HUB_TDD.PageObjects.HomePage.buscarProduto(HomePage.java:92)
+	at br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG.devePesquisarProduto(PesquisaProdutoTestNG.java:36)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace822409149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace822409149'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;RSI1562&apos;, ip: &apos;10.1.0.98&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at br.com.rsinet.HUB_TDD.PageObjects.HomePage.usuarioLogado(HomePage.java:31)
-	at br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG.deveCadastrarUsuario(CadastroClienteTestNG.java:53)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\WILLIA~1.COS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54269}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ed8b07ce88c398e5953af444f18d748b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+	at br.com.rsinet.HUB_TDD.PageObjects.HomePage.buscarProduto(HomePage.java:92)
+	at br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG.devePesquisarProduto(PesquisaProdutoTestNG.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -119,8 +143,8 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>16</td>
-<td>br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG@212bf671</td></tr>
+<td>4</td>
+<td>br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@3c87521</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -129,6 +153,11 @@ Driver info: driver.version: unknown
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
+<tr>
+<td title='br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG.deveCadastrarUsuario()'><b>deveCadastrarUsuario</b><br>Test class: br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG</td>
+<td></td>
+<td>9</td>
+<td>br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG@212bf671</td></tr>
 <tr>
 <td title='br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG.deveEncontrarProduto()'><b>deveEncontrarProduto</b><br>Test class: br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG</td>
 <td></td>
@@ -140,19 +169,14 @@ Driver info: driver.version: unknown
 <td>3</td>
 <td>br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@3c87521</td></tr>
 <tr>
-<td title='br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG.devePesquisarProduto()'><b>devePesquisarProduto</b><br>Test class: br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG</td>
-<td></td>
-<td>5</td>
-<td>br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@3c87521</td></tr>
-<tr>
 <td title='br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG.deveRecusarUserNameDuplicado()'><b>deveRecusarUserNameDuplicado</b><br>Test class: br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG</td>
 <td></td>
-<td>7</td>
+<td>8</td>
 <td>br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG@212bf671</td></tr>
 <tr>
 <td title='br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG.naoDeveEncontrarProduto()'><b>naoDeveEncontrarProduto</b><br>Test class: br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG</td>
 <td></td>
-<td>5</td>
+<td>6</td>
 <td>br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@14a2f921</td></tr>
 </table><p>
 </body>

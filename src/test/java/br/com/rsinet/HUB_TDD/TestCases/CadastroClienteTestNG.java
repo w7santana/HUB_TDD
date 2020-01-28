@@ -31,10 +31,8 @@ public class CadastroClienteTestNG {
 	
 	@Test (priority = 0)
 	public void deveCadastrarUsuario() throws Exception {
-		
 		HomePage.btnUser(navegador).click();
 		LoginPage.lnkNewAccount(navegador).sendKeys(Keys.ENTER);
-		
 		FormDeCadastroPage.fldUserName(navegador).sendKeys(ExcelUtils.getCellData(1, 0));
 		FormDeCadastroPage.fldEmail(navegador).sendKeys(ExcelUtils.getCellData(1, 1));
 		FormDeCadastroPage.fldPassword(navegador).sendKeys(ExcelUtils.getCellData(1, 2));
@@ -58,7 +56,6 @@ public class CadastroClienteTestNG {
 	public void deveRecusarUserNameDuplicado() throws Exception {
 		HomePage.btnUser(navegador).click();
 		LoginPage.lnkNewAccount(navegador).sendKeys(Keys.ENTER);
-		
 		FormDeCadastroPage.fldUserName(navegador).sendKeys(ExcelUtils.getCellData(1, 0));
 		FormDeCadastroPage.fldEmail(navegador).sendKeys(ExcelUtils.getCellData(1, 1));
 		FormDeCadastroPage.fldPassword(navegador).sendKeys(ExcelUtils.getCellData(1, 2));

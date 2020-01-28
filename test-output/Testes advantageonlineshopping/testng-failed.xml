@@ -5,7 +5,6 @@
     <classes>
       <class name="br.com.rsinet.HUB_TDD.TestCases.CadastroClienteTestNG">
         <methods>
-          <include name="deveCadastrarUsuario"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
@@ -20,6 +19,7 @@
         <methods>
           <include name="Setup"/>
           <include name="tearDown"/>
+          <include name="devePesquisarProduto"/>
         </methods>
       </class> <!-- br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG -->
     </classes>

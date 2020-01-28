@@ -31,7 +31,6 @@ public class EncontraProdutoTestNG {
 		
 		AssertJUnit.assertEquals("LOGITECH G502 PROTEUS CORE", HomePage.lblProduto(navegador));
 		Print.captureScreenShot(navegador);
-
 	}
 	
 	@Test

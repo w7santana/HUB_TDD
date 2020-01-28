@@ -1,6 +1,6 @@
 package br.com.rsinet.HUB_TDD.PageObjects;
 
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -23,10 +23,7 @@ public class HomePage {
 
 	public static String usuarioLogado(WebDriver navegador) throws InterruptedException {
 		
-		@SuppressWarnings("deprecation")
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(navegador).withTimeout(10, TimeUnit.SECONDS)
-				.pollingEvery(1, TimeUnit.SECONDS).ignoring(NoSuchElementException.class)
-				.ignoring(StaleElementReferenceException.class);
+		WebDriverWait wait = new WebDriverWait(navegador, 10);
 
 		WebElement usuarioLogado = wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//*[@id=\"menuUserLink\"]/span")));
@@ -75,7 +72,10 @@ public class HomePage {
 	}
 
 	public static WebElement btnLupa(WebDriver navegador) {
-		element = navegador.findElement(By.id("menuSearch"));
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(navegador).withTimeout(Duration.ofSeconds(10))
+				.pollingEvery(Duration.ofSeconds(1)).ignoring(NoSuchElementException.class)
+				.ignoring(StaleElementReferenceException.class);
+		element = wait.until(ExpectedConditions.visibilityOf(navegador.findElement(By.id("menuSearch"))));
 		return element;
 	}
 
@@ -85,20 +85,30 @@ public class HomePage {
 	}
 
 	public static WebElement buscarProduto(WebDriver navegador, String produto) {
-		WebDriverWait wait = new WebDriverWait(navegador, 10);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[. ='" + produto + "']")));
+		JavascriptExecutor ex = (JavascriptExecutor) navegador;
+		ex.executeAsyncScript("window.setTimeout(arguments[arguments.length - 1], 4000);");
+		
 		element = navegador.findElement(By.xpath("//*[. ='" + produto + "']"));
 		System.out.println("Produto pesquisado: " + element.getText());
-		JavascriptExecutor ex = (JavascriptExecutor) navegador;
 		ex.executeScript("arguments[0].click();", element);
 
 		return element;
 	}
 
 	public static WebElement descProduto(WebDriver navegador) {
-		WebDriverWait wait = new WebDriverWait(navegador, 10);
-		element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"Description\"]/h1")));
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(navegador).withTimeout(Duration.ofSeconds(10))
+				.pollingEvery(Duration.ofSeconds(1)).ignoring(NoSuchElementException.class)
+				.ignoring(StaleElementReferenceException.class);
+		try {
+			element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"Description\"]/h1")));
+			
+		} catch (Exception e) {
+			e.getMessage();
+		}
+		System.out.println(element.getText());
 		return element;
 	}
+	
+	
 
 }

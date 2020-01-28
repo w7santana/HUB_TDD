@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35385" started-at="2020-01-17T18:11:43Z" finished-at="2020-01-17T18:12:18Z">
+  <suite name="Default suite" duration-ms="20018" started-at="2020-01-28T16:41:59Z" finished-at="2020-01-28T16:42:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35385" started-at="2020-01-17T18:11:43Z" finished-at="2020-01-17T18:12:18Z">
-      <class name="br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@55f3ddb1]" name="Setup" is-config="true" duration-ms="12152" started-at="2020-01-17T15:11:43Z" finished-at="2020-01-17T15:11:55Z">
+    <test name="Default test" duration-ms="20018" started-at="2020-01-28T16:41:59Z" finished-at="2020-01-28T16:42:19Z">
+      <class name="br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@4b9e13df]" name="Setup" is-config="true" duration-ms="13034" started-at="2020-01-28T13:41:59Z" finished-at="2020-01-28T13:42:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="deveEncontrarProduto()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@55f3ddb1]" name="deveEncontrarProduto" duration-ms="5585" started-at="2020-01-17T15:11:55Z" finished-at="2020-01-17T15:12:01Z">
+        <test-method status="PASS" signature="devePesquisarProduto()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@4b9e13df]" name="devePesquisarProduto" duration-ms="6267" started-at="2020-01-28T13:42:12Z" finished-at="2020-01-28T13:42:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deveEncontrarProduto -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@55f3ddb1]" name="TearDown" is-config="true" duration-ms="728" started-at="2020-01-17T15:12:01Z" finished-at="2020-01-17T15:12:02Z">
+        </test-method> <!-- devePesquisarProduto -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG@4b9e13df]" name="tearDown" is-config="true" duration-ms="686" started-at="2020-01-28T13:42:19Z" finished-at="2020-01-28T13:42:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@55f3ddb1]" name="Setup" is-config="true" duration-ms="10168" started-at="2020-01-17T15:12:02Z" finished-at="2020-01-17T15:12:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="naoDeveEncontrarProduto()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@55f3ddb1]" name="naoDeveEncontrarProduto" duration-ms="5979" started-at="2020-01-17T15:12:12Z" finished-at="2020-01-17T15:12:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- naoDeveEncontrarProduto -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG@55f3ddb1]" name="TearDown" is-config="true" duration-ms="740" started-at="2020-01-17T15:12:18Z" finished-at="2020-01-17T15:12:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- br.com.rsinet.HUB_TDD.TestCases.EncontraProdutoTestNG -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- br.com.rsinet.HUB_TDD.TestCases.PesquisaProdutoTestNG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

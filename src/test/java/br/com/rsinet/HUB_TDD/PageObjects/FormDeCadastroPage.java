@@ -1,16 +1,13 @@
 package br.com.rsinet.HUB_TDD.PageObjects;
 
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
@@ -85,7 +82,6 @@ public class FormDeCadastroPage {
 		element = navegador.findElement(By.name("i_agree"));
 		JavascriptExecutor jse = (JavascriptExecutor)navegador;
         jse.executeScript("scrollBy(0,200)", "");
-		
 		return element;
 	}
 
@@ -95,14 +91,12 @@ public class FormDeCadastroPage {
 	}
 
 	public static WebElement lblUsuarioJaExiste(WebDriver navegador) {
-		@SuppressWarnings("deprecation")
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(navegador).withTimeout(10, TimeUnit.SECONDS)
-				.pollingEvery(1, TimeUnit.SECONDS).ignoring(NoSuchElementException.class)
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(navegador).withTimeout(Duration.ofSeconds(10))
+				.pollingEvery(Duration.ofSeconds(1)).ignoring(NoSuchElementException.class)
 				.ignoring(StaleElementReferenceException.class);
 
 		element = wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//*[@id=\"registerPage\"]/article/sec-form/div[2]/label[1]")));
-
 		return element;
 	}
 
